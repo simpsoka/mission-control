@@ -7,7 +7,7 @@
 
 	/* shuttle config */
 	--shuttle-logo: var(--shuttle-logo-nasa);
-	--rocket-fuel: 1;
+	--rocket-fuel: 0;
 }
 
 body {
