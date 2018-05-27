@@ -1,0 +1,127 @@
+
+:root {
+	--shuttle-logo-nasa: url('../images/nasa-logo.svg');
+	--shuttle-logo-jpl: url('../images/jpl-logo.svg');
+	--rocket-fuel-duration: 8s;
+	--rocket-launch-countdown: 1s;
+
+	/* shuttle config */
+	--shuttle-logo: var(--shuttle-logo-nasa);
+	--rocket-fuel: 1;
+}
+
+body {
+	background: linear-gradient(#30AAFC 20%, #57DFFF 100%) #57DFFF;
+}
+
+.shuttle {
+	width: 15vw;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -7.5vw;
+	animation: launch var(--rocket-fuel-duration) ease-in;
+	animation-delay: var(--rocket-launch-countdown);
+	animation-fill-mode: forwards;
+}
+
+.shuttle-logo {
+	width: 100%;
+	background: no-repeat var(--shuttle-logo);
+	height: 20vw;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.shuttle-vehicle {
+	position: absolute;
+	bottom: 0;
+}
+
+.rocket {
+	position: absolute;
+	top: -2vh;
+	background: linear-gradient(rgba(255,255,255,0.8), transparent);
+	width: 1vw;
+	height: 50vh;
+	filter: blur(5px);
+	animation: launch-rocket var(--rocket-fuel-duration) ease-in;
+	animation-delay: var(--rocket-launch-countdown);
+	animation-fill-mode: forwards;
+}
+
+.rocket-left {
+	left: 4.75vw;
+}
+
+.rocket-right {
+	right: 4.75vw;
+}
+
+.rocket-exhaust {
+	position: fixed;
+	bottom: 0;
+}
+
+.rocket-exhaust {
+	width: 100vw;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.rocket-exhaust-item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: launch-exhaust var(--rocket-fuel-duration) ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: 50% 50%;
+	opacity: 0;
+}
+
+.rocket-exhaust-item:nth-child(1) {
+	animation-delay: 0.5s;
+}
+
+.rocket-exhaust-large {
+	background: no-repeat url('../images/exhaust-large.svg') 50% 0;
+}
+
+.rocket-exhaust-medium {
+	background: no-repeat url('../images/exhaust-medium.svg') 50% 0;
+}
+
+.rocket-exhaust-small {
+	background: no-repeat url('../images/exhaust-small.svg') 50% 0;
+}
+
+
+@keyframes launch {
+  100% {
+  	transform: translateY(calc(var(--rocket-fuel) * -100vh));
+  }
+}
+
+@keyframes launch-exhaust {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: var(--rocket-fuel);
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.3) translateY(5vh);
+	}
+}
+
+@keyframes launch-rocket {
+	0% {
+		opacity: var(--rocket-fuel);
+	}
+	100% {
+		opacity: 0;
+	}
+}
