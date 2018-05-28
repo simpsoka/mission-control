@@ -3,7 +3,7 @@
 	--shuttle-logo-nasa: url('../images/nasa-logo.svg');
 	--shuttle-logo-jpl: url('../images/jpl-logo.svg');
 	--rocket-fuel-duration: 8s;
-	--rocket-launch-countdown: 1s;
+	--rocket-launch-countdown: 0s;
 
 	/* shuttle config */
 	--shuttle-logo: var(--shuttle-logo-jpl);
