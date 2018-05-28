@@ -85,15 +85,15 @@ body {
 }
 
 .rocket-exhaust-large {
-	background: no-repeat url('../images/exhaust-large.svg') 50% 0;
+	background: no-repeat url('../images/exhaust-large.svg') 50% 100%;
 }
 
 .rocket-exhaust-medium {
-	background: no-repeat url('../images/exhaust-medium.svg') 50% 0;
+	background: no-repeat url('../images/exhaust-medium.svg') 50% 100%;
 }
 
 .rocket-exhaust-small {
-	background: no-repeat url('../images/exhaust-small.svg') 50% 0;
+	background: no-repeat url('../images/exhaust-small.svg') 50% 100%;
 }
 
 
