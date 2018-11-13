@@ -7,7 +7,7 @@
 
 	/* shuttle config */
 	--shuttle-logo: var(--shuttle-logo-jpl);
-	--rocket-fuel: 11;
+	--rocket-fuel: 1;
 }
 
 body {
