@@ -1,13 +1,13 @@
 
 :root {
-	--shuttle-logo-nasa: url('../images/nasa-logo.svg');
+	--shuttle-logo-nasa: url('../images/jpl-logo.svg');
 	--shuttle-logo-jpl: url('../images/jpl-logo.svg');
 	--rocket-fuel-duration: 8s;
 	--rocket-launch-countdown: 0s;
 
 	/* shuttle config */
 	--shuttle-logo: var(--shuttle-logo-nasa);
-	--rocket-fuel: 0;
+	--rocket-fuel: 1;
 }
 
 body {
