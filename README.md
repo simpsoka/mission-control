@@ -1,7 +1,5 @@
 # Mission Control is a demo for GitHub Collaboration workflows
 
-![Mission Control Demo](https://d.pr/free/i/u9HQoh+)
-
 ## Demo narrative
 This demo can be used to test, demonstrate and gather feedback on collaboration features and products for GitHub. 
 
